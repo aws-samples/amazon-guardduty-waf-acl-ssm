@@ -14,6 +14,7 @@ For automated response solutions based on GuardDuty detection findings, Amazon W
 
 # Solution Introduction
 In this blog, we will briefly explain how to automatically respond to real-time malicious file detections by GuardDuty and Systems Manager. When GuardDuty detects the presence of malicious files (Malware), it will instantly trigger a Lambda function. This Lambda function, in turn, utilizes Systems Manager to remove the identified malicious files from EC2 instances. Before deleting the files, a backup of the files and their associated information will be created in both S3 and DynamoDB, facilitating potential file recovery when needed.
+The Lambda sample code is Python3.9, We will update it to Python3.11.
 
 * The overall architecture diagram of this solution is as follows: 
 ![image](https://github.com/HanqingAWS/amazon-guardduty-waf-acl-ssm/blob/main/amazon-guardduty-waf-acl-ssm.jpg)
