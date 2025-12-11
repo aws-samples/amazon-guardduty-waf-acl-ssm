@@ -17,7 +17,7 @@ In this blog, we will briefly explain how to automatically respond to real-time 
 The Lambda sample code is Python3.9, We will update it to Python3.11.
 
 * The overall architecture diagram of this solution is as follows: 
-![image](https://github.com/HanqingAWS/amazon-guardduty-waf-acl-ssm/blob/main/amazon-guardduty-waf-acl-ssm.jpg)
+![image](https://github.com/aws-samples/amazon-guardduty-waf-acl-ssm/blob/main/amazon-guardduty-waf-acl-ssm.jpg)
 Step-by-step explanation:
 
 1.	GuardDuty detects the discovery of a malicious file, resulting in a finding.
